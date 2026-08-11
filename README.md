@@ -1,4 +1,4 @@
-# Assignment 5: Compare Fine-Tuning vs Prompt Engineering
+ Compare Fine-Tuning vs Prompt Engineering
 
 ## Objective
 
