@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+
+.ipynb_checkpoints/
+
+venv/
+.env
+
+fine_tuned_model/
+models/
+
+.cache/
+huggingface/
+
+*.log

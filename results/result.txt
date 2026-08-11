@@ -1,0 +1,88 @@
+ Compare Fine-Tuning vs Prompt Engineering
+========================================================
+
+NLP Task:
+Sentiment Analysis
+
+
+TEST DATA
+---------
+
+1. I love this product       -> Positive
+2. This is the worst experience -> Negative
+3. Amazing service           -> Positive
+4. I hate this               -> Negative
+
+
+PROMPT ENGINEERING
+------------------
+
+Model:
+google/flan-t5-small
+
+Training Required:
+No
+
+Predictions:
+[1, 0, 1, 0]
+
+Accuracy:
+100.00%
+
+Inference Time:
+0.8154 seconds
+
+
+FINE-TUNED MODEL
+----------------
+
+Base Model:
+DistilBERT
+
+Training Required:
+Yes
+
+Training Dataset:
+SST-2
+
+Predictions:
+[1, 0, 1, 0]
+
+Accuracy:
+100.00%
+
+Inference Time:
+0.3727 seconds
+
+
+FINAL COMPARISON
+----------------
+
+Metric                  Prompt Engineering    Fine-Tuned Model
+----------------------------------------------------------------
+Model                   FLAN-T5-small         DistilBERT
+Training Required       No                    Yes
+Accuracy                100.00%               100.00%
+Inference Time          0.8154 sec            0.3727 sec
+
+
+CONCLUSION
+----------
+
+Both approaches achieved 100% accuracy on the four test
+sentences used in this experiment.
+
+The fine-tuned DistilBERT model had a lower measured
+inference time of 0.3727 seconds compared with 0.8154
+seconds for the prompt-based FLAN-T5-small approach.
+
+Prompt engineering required no additional training and
+was simpler to implement.
+
+Fine-tuning required additional training data and
+computational resources, but produced a model specialized
+for sentiment classification.
+
+Note:
+The accuracy result is based on only four test sentences,
+so it should not be considered a general benchmark.
