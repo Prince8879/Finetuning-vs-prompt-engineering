@@ -29,13 +29,6 @@ Four test sentences were used:
 | Amazing service | Positive |
 | I hate this | Negative |
 
-Label encoding:
-
-```text
-1 = Positive
-0 = Negative
-
-
 ** Prince Tiwari **
 
 GitHub: https://github.com/Prince8879
@@ -43,3 +36,10 @@ GitHub: https://github.com/Prince8879/Finetuning-vs-prompt-engineering
 
 
 LinkedIn: https://linkedin.com/in/https://www.linkedin.com/in/prince-tiwari-2549b7383?utm_source=share_via&utm_content=profile&utm_medium=member_android
+
+
+
+
+
+
+
